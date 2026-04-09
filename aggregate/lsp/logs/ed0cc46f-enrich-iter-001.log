@@ -1,0 +1,37 @@
+[2026-04-09T17:52:30Z] === ENRICH ITERATION 1 START | repo=kvesteri/sqlalchemy-utils sha=ed0cc46f ===
+[2026-04-09T17:52:30Z] [iter=1] PHASE START: enrich repo=kvesteri/sqlalchemy-utils sha=ed0cc46f runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ed0cc46f-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ed0cc46f96d3065331ff34c0713da23ee90920a0.nq.gz
+[2026-04-09T17:52:53Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-09T17:52:57Z] [iter=1] AST store loaded triples=650977 load_secs=4 mem_mb=838 MB
+[2026-04-09T17:52:57Z] [iter=1] Step 2: Finding LSP targets mem_mb=838 MB
+[2026-04-09T17:52:59Z] [iter=1] LSP targets found call_sites=5433 imports=462 extends=455 implements=0 secs=2
+[2026-04-09T17:53:01Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=838 MB
+[2026-04-09T17:53:04Z] [iter=1] Position index built positions=45697 nodes_with_types=57978 secs=4 mem_mb=838 MB
+[2026-04-09T17:53:04Z] [iter=1] Step 3: Starting LSP resolution mem_mb=838 MB already_completed_types=[] already_completed_files=0
+[2026-04-09T17:53:04Z] [iter=1] Resolving target type target_type=call_site count=5433
+[2026-04-09T17:53:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=0 resolved=0 errors=0 current=sqlalchemy_utils/functions/render.py
+[2026-04-09T17:53:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.3 files_done=6 resolved=67 errors=172 current=tests/types/test_encrypted.py
+[2026-04-09T17:54:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.9 files_done=10 resolved=93 errors=310 current=tests/test_path.py
+[2026-04-09T17:55:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=13 resolved=108 errors=500 current=tests/types/test_uuid.py
+[2026-04-09T17:55:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.3 files_done=19 resolved=121 errors=674 current=tests/types/test_phonenumber.py
+[2026-04-09T17:56:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.9 files_done=23 resolved=152 errors=818 current=sqlalchemy_utils/types/uuid.py
+[2026-04-09T17:57:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.6 files_done=32 resolved=252 errors=992 current=sqlalchemy_utils/relationships/__init__.py
+[2026-04-09T17:57:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.2 files_done=37 resolved=345 errors=1122 current=sqlalchemy_utils/functions/orm.py
+[2026-04-09T17:58:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.7 files_done=43 resolved=459 errors=1256 current=sqlalchemy_utils/i18n.py
+[2026-04-09T17:58:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.4 files_done=49 resolved=486 errors=1437 current=tests/observes/test_column_property.py
+[2026-04-09T17:59:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.0 files_done=57 resolved=506 errors=1579 current=tests/functions/test_has_unique_index.py
+[2026-04-09T18:00:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.6 files_done=65 resolved=562 errors=1727 current=tests/test_proxy_dict.py
+[2026-04-09T18:00:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.2 files_done=74 resolved=581 errors=1873 current=sqlalchemy_utils/types/pg_composite.py
+[2026-04-09T18:01:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.7 files_done=80 resolved=618 errors=2009 current=sqlalchemy_utils/types/locale.py
+[2026-04-09T18:01:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.3 files_done=93 resolved=642 errors=2136 current=tests/types/test_choice.py
+[2026-04-09T18:02:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.8 files_done=96 resolved=664 errors=2264 current=tests/types/test_weekdays.py
+[2026-04-09T18:02:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.4 files_done=108 resolved=691 errors=2415 current=sqlalchemy_utils/types/ts_vector.py
+[2026-04-09T18:03:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.0 files_done=123 resolved=770 errors=2565 current=tests/functions/test_has_changes.py
+[2026-04-09T18:03:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.5 files_done=139 resolved=801 errors=2688 current=tests/functions/test_get_hybrid_properties.py
+[2026-04-09T18:04:24Z] [iter=1] Target type resolved target_type=call_site resolved=860 errors=2786 secs=680 mem_mb=838 MB
+[2026-04-09T18:04:24Z] [iter=1] Resolving target type target_type=import_statement count=462
+[2026-04-09T18:04:27Z] [iter=1] Target type resolved target_type=import_statement resolved=195 errors=0 secs=3 mem_mb=838 MB
+[2026-04-09T18:04:27Z] [iter=1] Resolving target type target_type=extends_clause count=455
+[2026-04-09T18:04:30Z] [iter=1] Target type resolved target_type=extends_clause resolved=434 errors=0 secs=3 mem_mb=838 MB
+[2026-04-09T18:04:35Z] [iter=1] Step 5: Writing final enrichment file triples=52575
+[2026-04-09T18:04:36Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/ed0cc46f96d3065331ff34c0713da23ee90920a0.nq.gz size_kb=1212
+[2026-04-09T18:04:36Z] [iter=1] PHASE END: enrich elapsed_s=726 elapsed_min=12.1 total_triples=52575
